@@ -1,0 +1,44 @@
+
+<div class="navbar navbar-header" role="navigation">
+	<div class="inner">
+
+		<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+			<!-- DEFINE $MICRODATA = ' itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""' -->
+			<!-- EVENT overall_header_breadcrumbs_before -->
+			<li class="small-icon icon-home breadcrumbs">
+				<!-- IF U_SITE_HOME -->
+				<span class="crumb">
+					<a href="{U_SITE_HOME}"{$MICRODATA} data-navbar-reference="home">{L_SITE_HOME}</a>
+				</span>
+				<!-- ENDIF -->
+
+				<!-- EVENT overall_header_breadcrumb_prepend -->
+				<span class="crumb">
+					<a href="{U_INDEX}" accesskey="h"{$MICRODATA} data-navbar-reference="index">{L_INDEX}</a>
+				</span>
+
+				<!-- BEGIN navlinks -->
+				<!-- EVENT overall_header_navlink_prepend -->
+
+				<span class="crumb">
+					<a href="{navlinks.U_VIEW_FORUM}"{$MICRODATA}<!-- IF navlinks.MICRODATA --> {navlinks.MICRODATA}<!-- ENDIF -->>{navlinks.FORUM_NAME}</a>
+				</span>
+
+				<!-- EVENT overall_header_navlink_append -->
+				<!-- END navlinks -->
+
+				<!-- EVENT overall_header_breadcrumb_append -->
+			</li>
+			<!-- EVENT overall_header_breadcrumbs_after -->
+		</ul>
+
+		<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
+		<ul id="nav-breadcrumbs" class="linklist navlinks navlinks-rightside responsive-search" style="display: none;" role="menubar">
+			<li class="">
+				<a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}" role="menuitem">{L_SEARCH}</a>
+			</li>
+		</ul>
+		<!-- ENDIF -->
+
+	</div>
+</div>

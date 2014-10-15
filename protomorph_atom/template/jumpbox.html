@@ -1,0 +1,42 @@
+
+<!-- IF S_VIEWTOPIC or S_VIEWFORUM or SEARCH_TOPIC or S_SEARCH_ACTION or S_DISPLAY_JUMPBOX -->
+<div class="jumpbox-return">
+	<!-- IF S_VIEWTOPIC -->
+	<a href="{U_VIEW_FORUM}" class="left-box arrow-{S_CONTENT_FLOW_BEGIN}" accesskey="r">{L_RETURN_TO_FORUM}</a>
+	<!-- ELSEIF S_VIEWFORUM -->
+	<a href="{U_INDEX}" class="left-box arrow-{S_CONTENT_FLOW_BEGIN}" accesskey="r">{L_RETURN_TO_INDEX}</a>
+	<!-- ELSEIF SEARCH_TOPIC -->
+	<a class="left-box arrow-{S_CONTENT_FLOW_BEGIN}" href="{U_SEARCH_TOPIC}" accesskey="r">{L_RETURN_TO_TOPIC}</a>
+	<!-- ELSEIF S_SEARCH_ACTION -->
+	<a class="left-box arrow-{S_CONTENT_FLOW_BEGIN}" href="{U_SEARCH}" title="{L_SEARCH_ADV}" accesskey="r">{L_GO_TO_SEARCH_ADV}</a>
+	<!-- ENDIF -->
+
+	<!-- IF S_DISPLAY_JUMPBOX -->
+	<div class="dropdown-container dropdown-container-{S_CONTENT_FLOW_END}<!-- IF not S_IN_MCP --> dropdown-up<!-- ENDIF --> dropdown-{S_CONTENT_FLOW_BEGIN} dropdown-button-control" id="jumpbox">
+		<span class="dropdown-trigger button dropdown-select">
+			<!-- IF S_IN_MCP and S_MERGE_SELECT -->
+			{L_SELECT_TOPICS_FROM}
+			<!-- ELSEIF S_IN_MCP -->
+			{L_MODERATE_FORUM}
+			<!-- ELSE -->
+			{L_JUMP_TO}
+			<!-- ENDIF -->
+		</span>
+		<div class="dropdown hidden">
+			<div class="pointer">
+				<div class="pointer-inner"></div>
+			</div>
+			<ul class="dropdown-contents">
+			<!-- BEGIN jumpbox_forums -->
+				<!-- IF jumpbox_forums.FORUM_ID neq -1 -->
+				<li>
+					<a href="{jumpbox_forums.LINK}"><!-- BEGIN level -->&nbsp;-&nbsp;<!-- END level -->{jumpbox_forums.FORUM_NAME}</a>
+				</li>
+				<!-- ENDIF -->
+			<!-- END jumpbox_forums -->
+			</ul>
+		</div>
+	</div>
+	<!-- ENDIF -->
+</div>
+<!-- ENDIF -->

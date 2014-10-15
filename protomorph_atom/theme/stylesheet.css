@@ -1,0 +1,30 @@
+/* =======================================================================
+ * phpBB3 Style Sheet
+ * =======================================================================
+ * Style name:			ProtoMorph Atom: Version 1.0.0
+ * Based on style:	prosilver (the default phpBB 3.1.x style)
+ * Original author:	Tom Beddard ( http://www.subblue.com/ )
+ * Modified by:			ProtoMorph ( http://protomorph.tk/ )
+ * ========================================================================
+ * Copyright 2014
+ * Licensed GNU General Public License, version 2 (GPL-2.0)
+ * =======================================================================
+ * Colour scheme:
+ * Blue				= #12a3eb
+ * BlueDark		= #0076b1
+ * Green			= #31d510
+ * Orange			= #ed5b12
+ * Teal				= #10d5b5
+ * Red				= #ed1236
+ * RedDark		= #b3001e
+ * Yellow			= #edc912
+ * ======================================================================= */
+
+@import url("common.css");
+@import url("links.css");
+@import url("content.css");
+@import url("buttons.css");
+@import url("cp.css");
+@import url("forms.css");
+@import url("extra.css");
+@import url("imageset.css");

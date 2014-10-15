@@ -1,0 +1,92 @@
+/* =======================================================================
+ * Extra style Markup
+ * =======================================================================
+ * Scroll to top button
+ * ======================================================================== */
+.scroll-to-top {
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	display: none;
+	padding: 5px 7px;
+	line-height: 20px;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #12a3eb;
+	border: 1px solid #12a3eb;
+	-webkit-box-shadow: 0 4px 8px rgba(0,0,0,.125);
+					box-shadow: 0 4px 8px rgba(0,0,0,.125);
+	cursor: pointer;
+	opacity: .5;
+}
+
+.scroll-to-top:hover { opacity: 1; }
+
+.scroll-to-top > .fa {
+	position: relative;
+	top: -1px;
+}
+
+/* ========================================================================
+ * Bootstrap Tooltip
+ * ======================================================================== */
+.tooltip {
+	position: absolute;
+	z-index: 1070;
+	display: block;
+	font-size: 12px;
+	line-height: 1.4;
+	visibility: visible;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.tooltip.in {
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.tooltip.top {
+	padding: 5px 0;
+	margin-top: -3px;
+}
+
+.tooltip.bottom {
+	padding: 5px 0;
+	margin-top: 3px;
+}
+
+.tooltip-inner {
+	max-width: 200px;
+	padding: 3px 8px;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	background-color: #0076b1;
+	-webkit-box-shadow: 0 4px 8px rgba(0,0,0,.125);
+					box-shadow: 0 4px 8px rgba(0,0,0,.125);
+}
+
+.tooltip-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+}
+
+.tooltip.top .tooltip-arrow {
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px 5px 0;
+	border-top-color: #0076b1;
+}
+
+.tooltip.bottom .tooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #0076b1;
+}

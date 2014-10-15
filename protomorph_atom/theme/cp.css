@@ -1,0 +1,463 @@
+/* =======================================================================
+ * Control Panel Styles
+ * ======================================================================= */
+#cp-main {
+	float: left;
+	width: 80%;
+}
+
+@media (max-width: 992px) {
+	#cp-main {
+		float: none;
+		width: 100%;
+	}
+}
+
+#cp-menu {
+	float:left;
+	margin-top: 0;
+	margin-bottom: 20px;
+	width: 20%;
+}
+
+@media (max-width: 992px) {
+	#cp-menu {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+#cp-main .content { padding: 0; }
+
+.panel-container .panel ol { margin-left: 20px; }
+
+.panel-container .panel li.row { }
+
+ul.cplist { margin-bottom: 15px; }
+
+.panel-container .panel li.header dd,
+.panel-container .panel li.header dt { margin-bottom: 0; }
+
+ul.cplist.two-columns dt { width: 90%; }
+
+ul.cplist.two-columns dd { width: 10%; }
+
+@media (max-width: 767px) {
+	ul.cplist.two-columns dt { width: 80%; }
+
+	ul.cplist.two-columns dd  { width: 20%; }
+}
+
+ul.cplist.two-long-columns dt { width: 70%; }
+
+ul.cplist.missing-column dd.lastpost { width: 30%; }
+
+@media (max-width: 767px) {
+	ul.cplist.two-long-columns dt { width: 100%; }
+
+	ul.cplist.two-long-columns dd { display: none; }
+
+	ul.cplist.missing-column dt { width: 100%; }
+
+	ul.cplist.missing-column dd.lastpost { width: 75%; }
+
+	ul.cplist.missing-column dd.mark { width: 25%; }
+}
+
+.panel-container table.table1 { margin-bottom: 20px; }
+
+.panel-container table.table1 thead th {
+	font-weight: 600;
+	padding: 5px;
+}
+
+.panel-container table.table1 thead th:first-child {
+	padding-left: 0;
+	text-align: left;
+}
+
+.panel-container table.table1 thead th:last-child { padding-right: 0; }
+
+.panel-container table.table1 tbody th {
+	font-style: italic;
+	background-color: transparent !important;
+	border-bottom: none;
+}
+
+#cp-main .pm-message {
+	float: none;
+	width: auto;
+	margin: 10px 0;
+	border: 1px solid #e3e3e3;
+}
+
+.pm-message h2 { padding-bottom: 5px; }
+
+#cp-main .postbody h3,
+#cp-main .box2 h3 { margin-top: 0; }
+
+#cp-main .buttons { margin-left: 0; }
+
+#cp-main ul.linklist { margin: 0; }
+
+/* MCP Specific tweaks */
+.mcp-main .postbody { width: 100%; }
+
+.linkmcp { display: none; }
+
+.tabs-container h2 {
+	float: left;
+	margin-bottom: 0px;
+}
+
+/* =======================================================================
+ * CP tabs shared
+ * ======================================================================= */
+#tabs,
+#minitabs { line-height: 20px; }
+
+#tabs > ul,
+#minitabs > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#tabs .tab,
+#minitabs .tab {
+	float: left;
+	display: block;
+	margin-right: 5px;
+}
+
+#tabs .tab:last-child,
+#minitabs .tab:last-child { margin-right: 0; }
+
+#tabs .tab > a,
+#minitabs .tab > a {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+#tabs .tab > a { padding: 10px; }
+
+#minitabs .tab > a { padding: 5px 10px; }
+
+/* =======================================================================
+ * CP tabbed menu
+ * ======================================================================= */
+#tabs { margin-bottom: 20px; }
+
+#minitabs {
+	float: right;
+	margin-bottom: 10px;
+	max-width: 50%;
+}
+
+#minitabs .tab {
+	float: right;
+	margin-left: 2px;
+	margin-right: 0;
+}
+
+#tabs .tab > a,
+#minitabs .tab > a { text-decoration: none; }
+
+#tabs .tab > a:hover,
+#minitabs .tab > a:hover { background-color: #eeeeee; }
+
+#tabs .activetab > a,
+#tabs .activetab > a:hover,
+#minitabs .activetab > a,
+#minitabs .activetab > a:hover {
+	background-color: #12a3eb;
+	color: #ffffff;
+}
+
+/* =======================================================================
+ * Responsive tabs
+ * ======================================================================= */
+.responsive-tab { position: relative; }
+
+.responsive-tab > a.responsive-tab-link {
+	display: block;
+	font-size: 16px;
+	position: relative;
+	line-height: 10px;
+	text-decoration: none;
+}
+
+.responsive-tab .responsive-tab-link:before {
+	position: relative;
+	left: 0;
+	top: 7px;
+	display: block;
+	padding: 0;
+	height: 10px;
+	width: 14px;
+	content: '';
+	border-bottom: 2px solid #12a3eb;
+	border-top: 6px double #12a3eb;
+}
+
+.responsive-tab .responsive-tab-link:hover:before { border-color: #0076b1; }
+
+.responsive-tab.dropdown-visible .responsive-tab-link:before,
+.responsive-tab.dropdown-visible .responsive-tab-link:hover:before { border-color: #ffffff; }
+
+#tabs .dropdown,
+#minitabs .dropdown {
+	top: 80%;
+	top: calc(100% - 11px);
+	margin-right: -1px;
+	font-weight: normal;
+}
+
+#minitabs .dropdown { margin-right: -1px; }
+
+#tabs .dropdown-up .dropdown,
+#minitabs .dropdown-up .dropdown {
+	bottom: 80%;
+	bottom: calc(100% - 11px);
+	top: auto;
+}
+
+#tabs .dropdown li,
+#minitabs .dropdown li { text-align: left; }
+
+/* =======================================================================
+ * UCP navigation menu
+ * =======================================================================
+ * Container for sub-navigation list
+ * ======================================================================= */
+#navigation {
+	width: 100%;
+	padding-top: 50px;
+	padding-right: 15px;
+}
+
+@media (max-width: 480px) {
+	#navigation {
+		width: 100%;
+		padding-top: 0;
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	#navigation {
+		width: 50%;
+		padding-top: 0;
+		padding-right: 15px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	#navigation {
+		padding: 0;
+		margin: 0 auto;
+		max-width: 320px;
+	}
+
+	#navigation a { background-image: none; }
+}
+
+#navigation ul { list-style: none; }
+
+/* Default list state */
+#navigation li {
+	display: block;
+	margin: 1px 0 3px;
+	padding: 0;
+}
+
+#navigation li:last-child { margin-bottom: 0; }
+
+/* Link styles for the sub-section links */
+#navigation a {
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+#navigation a:hover { background: #eeeeee; }
+
+#navigation #active-subsection a,
+#navigation #active-subsection a:hover {
+	background: #12a3eb;
+	color: #ffffff;
+}
+
+/* =======================================================================
+ * Preferences pane layout
+ * ======================================================================= */
+#cp-main h2 {
+	border-bottom: none;
+	padding: 0;
+}
+
+/* Friends list */
+.cp-mini {
+	padding-right: 15px;
+	margin-top: 10px;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+@media (max-width: 480px) {
+	.cp-mini {
+		width: 100%;
+		padding-top: 0;
+		padding-right: 0;
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.cp-mini {
+		width: 50%;
+		padding-top: 0;
+		padding-right: 15px;
+		margin-top: 0;
+	}
+}
+
+dl.mini dt { font-weight: 600; }
+
+dl.mini dd { padding-top: 4px; }
+
+.friend-online { font-weight: 600; }
+
+.friend-offline { font-style: italic; }
+
+/* =======================================================================
+ * PM Styles
+ * ======================================================================= */
+#pm-menu { }
+
+/* Defined rules list for PM options */
+ol.def-rules { padding-left: 0; }
+
+ol.def-rules li { padding: 1px; }
+
+/* PM marking colours */
+.pmlist li.bg1 { padding: 0 3px; }
+
+.pmlist li.bg2 { padding: 0 3px; }
+
+@media (max-width: 767px) {
+	dl.pmlist dt {
+		width: auto !important;
+		margin-bottom: 5px;
+	}
+
+	dl.pmlist dd {
+		display: inline-block;
+		margin-left: 0 !important;
+	}
+
+	dl.pmlist dd:first-of-type { padding-left: 20px; }
+}
+
+.pmlist li.pm_marked_colour,
+.pm_marked_colour,
+.pmlist li.pm_replied_colour,
+.pm_replied_colour,
+.pmlist li.pm_friend_colour,
+.pm_friend_colour,
+.pmlist li.pm_foe_colour,
+.pm_foe_colour {
+	padding: 0;
+	border: 3px solid transparent;
+	border-width: 0 3px;
+}
+
+.pmlist li.pm_message_reported_colour,
+.pm_message_reported_colour {
+	border-left-color: #ed1236;
+	border-right-color: #ed1236;
+}
+
+.pm-legend {
+	border-left-width: 10px;
+	border-left-style: solid;
+	border-right-width: 0;
+	margin-bottom: 5px;
+	padding-left: 3px;
+}
+
+@media (max-width: 767px) {
+	dl.mini dd.pm-legend {
+		float: left;
+		min-width: 200px;
+	}
+}
+
+.pmlist li.pm_marked_colour,
+.pm_marked_colour { border-color: #12a3eb; }
+
+.pmlist li.pm_replied_colour,
+.pm_replied_colour { border-color: #10d5b5; }
+
+.pmlist li.pm_friend_colour,
+.pm_friend_colour { border-color: #31d510; }
+
+.pmlist li.pm_foe_colour,
+.pm_foe_colour { border-color: #ed5b12; }
+
+/* Avatar gallery */
+#gallery label {
+	position: relative;
+	float: left;
+	margin: 10px;
+	padding: 5px;
+	width: auto;
+	background: #ffffff;
+	border: 1px solid #e3e3e3;
+	text-align: center;
+}
+
+#gallery label:hover { background-color: #12a3eb; }
+
+/* ========================================================================
+ * PM progress bar
+ * ======================================================================== */
+.pm-progress-bar {
+	display: block;
+	padding: 0;
+	margin-bottom: 15px;
+	height: 20px;
+	width: 100%;
+	background-color: #fbfbfb;
+	border: 1px solid #e3e3e3;
+}
+
+.pm-progress-bar > .progress {
+	display: block;
+	height: 100%;
+	width: 0%;
+	-webkit-box-shadow: 0 -7px 1px rgba(255, 255, 255, 0.1) inset;
+					box-shadow: 0 -7px 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.pm-progress-bar > .progress.ok { background-color: #31d510; }
+
+.pm-progress-bar > .progress.danger { background-color: #ed1236; }
+
+/* =======================================================================
+ * Responsive *CP navigation
+ * ======================================================================= */
+@media (max-width: 992px) {
+	.nojs #tabs a span,
+	.nojs #minitabs a span {
+		max-width: 40px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		letter-spacing: -.5px;
+	}
+}
