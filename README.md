@@ -5,12 +5,13 @@ Style for phpBB
 
 #### Requirements
 
-- phpBB 3.1 RC-5
+- phpBB 3.1 RC-6
 
 #### To Do
 
-- Fix RTL support
-- Fix some minor bugs
+- Better RTL support
+- Fix footer navbar responsive dropdown
+- Further bug fixes
 
 #### License
 
