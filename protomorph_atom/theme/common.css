@@ -1831,6 +1831,10 @@ form > p.post-notice strong { line-height: 20px; }
 
 .hidden { display: none; }
 
+@media (min-width: 768px) {
+	ul.linklist > li.hidden { display: none; }
+}
+
 .smilies { vertical-align: text-bottom; }
 
 .icon-notification { position: relative; }
