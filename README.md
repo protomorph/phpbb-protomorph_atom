@@ -15,9 +15,10 @@ Style for [phpBB][2]
 
 #### License
 
-[GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
+[GNU General Public License v2][3]
 
 © 2014 - [ProtoMorph][1]
 
 [1]: http://protomorph.tk/
 [2]: https://www.phpbb.com/
+[3]: http://opensource.org/licenses/GPL-2.0
