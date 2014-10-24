@@ -560,7 +560,7 @@
 .rtl #minitabs .dropdown li { text-align: right; }
 
 /* =======================================================================
- * Responsive *CP navigation
+ * Responsive * CP navigation
  * ======================================================================= */
 @media (max-width: 900px) {
 	.rtl #cp-menu,
@@ -599,15 +599,6 @@
 
 /* Avatar gallery */
 .rtl #gallery label { float: right; }
-
-/* =======================================================================
- * Responsive * CP navigation
- * ======================================================================= */
-@media (max-width: 900px) {
-	.rtl #cp-menu,
-	.rtl #navigation,
-	.rtl #cp-main { float: none; }
-}
 
 /* =======================================================================
  * forms.css
