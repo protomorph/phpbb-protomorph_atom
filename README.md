@@ -1,7 +1,7 @@
 ProtoMorph Atom
 ======================
 
-Style for phpBB
+Style for [phpBB][2]
 
 #### Requirements
 
@@ -17,4 +17,7 @@ Style for phpBB
 
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
 
-© 2014 - [ProtoMorph](http://protomorph.tk/)
+© 2014 - [ProtoMorph][1]
+
+[1]: http://protomorph.tk/
+[2]: https://www.phpbb.com/
