@@ -10,8 +10,8 @@ Style for [phpBB][2]
 #### To Do
 
 - Better RTL support
-- ~~Fix footer navbar responsive dropdown~~
 - Further bug fixes
+ - ~~Fix footer navbar responsive dropdown~~
 
 #### License
 
