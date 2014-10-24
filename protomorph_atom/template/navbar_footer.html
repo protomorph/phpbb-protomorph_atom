@@ -2,7 +2,7 @@
 <div class="navbar navbar-footer">
 	<div class="inner">
 
-		<ul id="nav-footer" class="linklist" role="menubar">
+		<ul id="nav-footer" class="linklist bulletin" role="menubar">
 			<li class="small-icon icon-home breadcrumbs">
 				<!-- IF U_SITE_HOME -->
 				<span class="crumb">
@@ -28,9 +28,9 @@
 			<!-- ENDIF -->
 		</ul>
 
-		<ul id="nav-footer" class="linklist navlinks-rightside" role="menubar">
+		<ul id="nav-footer" class="linklist navlinks-rightside bulletin" role="menubar">
 			<!-- IF U_CONTACT_US -->
-			<li class="small-icon icon-contact" data-last-responsive="true">
+			<li class="small-icon icon-contact rightside" data-last-responsive="true">
 				<a href="{U_CONTACT_US}" role="menuitem">{L_CONTACT_US}</a>
 			</li>
 			<!-- ENDIF -->
@@ -38,7 +38,7 @@
 			<!-- EVENT overall_footer_teamlink_before -->
 
 			<!-- IF U_TEAM -->
-			<li class="small-icon icon-team" data-last-responsive="true">
+			<li class="small-icon icon-team rightside" data-last-responsive="true">
 				<a href="{U_TEAM}" role="menuitem">{L_THE_TEAM}</a>
 			</li>
 			<!-- ENDIF -->
@@ -46,14 +46,14 @@
 			<!-- EVENT overall_footer_teamlink_after -->
 
 		<!-- IF not S_IS_BOT -->
-			<li class="small-icon icon-delete-cookies" data-last-responsive="true">
+			<li class="small-icon icon-delete-cookies rightside" data-last-responsive="true">
 				<a href="{U_DELETE_COOKIES}" data-ajax="true" data-refresh="true" role="menuitem">{L_DELETE_COOKIES}</a>
 			</li>
 		<!-- ENDIF -->
 
 			<!-- EVENT overall_footer_timezone_before -->
 
-			<li><span class="current-timezone">{S_TIMEZONE}</span></li>
+			<li class="rightside"><span class="current-timezone">{S_TIMEZONE}</span></li>
 
 			<!-- EVENT overall_footer_timezone_after -->
 		</ul>
