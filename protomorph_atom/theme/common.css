@@ -1829,7 +1829,8 @@ form > p.post-notice strong { line-height: 20px; }
 	background: transparent;
 }
 
-.hidden { display: none; }
+.hidden,
+ul.linklist > li.hidden { display: none; }
 
 @media (min-width: 768px) {
 	ul.linklist > li.hidden { display: none; }
@@ -2048,8 +2049,6 @@ li.notification-disapproved strong { color: #b3001e; }
 .dropdown-page-jump.dropdown-up .dropdown { bottom: 20px; }
 
 .dropdown-page-jump input.tiny { width: 50px; }
-
-.dropdown .clone { display: none; }
 
 .responsive .dropdown .clone { display: inherit; }
 
