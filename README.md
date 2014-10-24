@@ -9,9 +9,9 @@ Style for [phpBB][2]
 
 #### To Do
 
-<input type="checkbox" disabled> Better RTL support
-<input type="checkbox" disabled checked> ~~Fix footer navbar responsive dropdown~~
-<input type="checkbox" disabled> Further bug fixes
+- Better RTL support
+- ~~Fix footer navbar responsive dropdown~~
+- Further bug fixes
 
 #### License
 
