@@ -10,7 +10,7 @@ Style for phpBB
 #### To Do
 
 - Better RTL support
-- Fix footer navbar responsive dropdown
+- ~~Fix footer navbar responsive dropdown~~
 - Further bug fixes
 
 #### License
