@@ -12,6 +12,7 @@
 	// options
 	var options = {
 		ease: 'easeInOutCirc',
+		external: true,			// Set to false if you don't want external links to open in a new tab/window.
 		fade: 200,
 		offset: 200,
 		time: 600
@@ -28,6 +29,16 @@
 
 	$('[type="radio"]').wrap('<label class="radio-custom"></label>')
 		.after('<i class="radio-icon"></i>');
+
+	// EXTERNAL LINKS
+	// ==============
+
+	if (options.external) $('a').filter(function () {
+		return this.hostname && this.hostname !== location.hostname;
+	}).addClass('external').prop({
+		target: '_blank',
+		rel: 'nofollow'
+	});
 
 	// OFF CANVAS MENU
 	// ===============
