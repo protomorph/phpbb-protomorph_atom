@@ -11,7 +11,6 @@ A simple flat style with an off canvas menu for [phpBB][2]
 
 - Improve RTL support
 - Further minor bug fixes
- - ~~Fix footer navbar responsive dropdown~~
 
 #### License
 
