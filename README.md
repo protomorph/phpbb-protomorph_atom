@@ -1,16 +1,16 @@
-ProtoMorph Atom
+ProtoMorph Atom v1.0.0-RC1
 ======================
 
-Style for [phpBB][2]
+A simple flat style with an off canvas menu for [phpBB][2]
 
 #### Requirements
 
-- phpBB 3.1 RC-6
+- phpBB 3.1
 
 #### To Do
 
-- Better RTL support
-- Further bug fixes
+- Improve RTL support
+- Further minor bug fixes
  - ~~Fix footer navbar responsive dropdown~~
 
 #### License
