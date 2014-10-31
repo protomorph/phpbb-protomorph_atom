@@ -7,6 +7,10 @@ A simple flat style with an off canvas menu for [phpBB][2]
 
 - phpBB 3.1
 
+#### Features
+
+Coming soon!
+
 #### To Do
 
 - Improve RTL support
