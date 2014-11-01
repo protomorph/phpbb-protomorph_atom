@@ -1775,7 +1775,7 @@ div.rules {
 div.rules a {
 	color: #ffffff;
 	font-weight: 600;
-	textdecoration: underline;
+	text-decoration: underline;
 }
 
 div.rules ul,
