@@ -303,7 +303,7 @@ ul.linklist.bulletin > li.small-icon:before { display: none; }
 
 .has-profile .post-buttons {
 	position: absolute;
-	right: 0;
+	right: 8px;
 	top: 0;
 	float: none;
 	margin: 0;

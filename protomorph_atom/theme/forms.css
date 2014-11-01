@@ -262,6 +262,8 @@ fieldset.submit-buttons input { vertical-align: middle; }
 	}
 }
 
+#qr_postform h2 { font-size: 22px; }
+
 #qr_postform #message-box {
 	margin-bottom: 10px;
 	width: 100%;
@@ -270,6 +272,7 @@ fieldset.submit-buttons input { vertical-align: middle; }
 #qr_postform dl dt { display: none; }
 
 #qr_postform dl dd {
+	padding-left: 0;
 	margin-left: 0;
 	width: 100%;
 }
