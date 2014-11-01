@@ -311,7 +311,10 @@ ul.topiclist dd.views dfn {
 	float: none !important;
 }
 
-.postbody .content { overflow-x: auto; }
+.postbody .content {
+	padding-bottom: 2px;
+	overflow-x: auto;
+}
 
 .postbody img.postimage { max-width: 100%; }
 
