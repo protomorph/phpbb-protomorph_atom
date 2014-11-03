@@ -8,7 +8,7 @@
 				<a href="{U_VIEW_ALL_NOTIFICATIONS}" id="notification_list_button" class="dropdown-trigger">
 					<i class="fa fa-bell<!-- IF NOTIFICATIONS_COUNT == 0 -->-o<!-- ENDIF -->"></i>
 					<span>{L_NOTIFICATIONS}</span>
-					<strong>{NOTIFICATIONS_COUNT}</strong>
+					<!-- IF NOTIFICATIONS_COUNT != 0 --><strong>{NOTIFICATIONS_COUNT}</strong><!-- ENDIF -->
 				</a>
 				<!-- INCLUDE notification_dropdown.html -->
 			</li>
@@ -19,7 +19,7 @@
 				<a href="{U_PRIVATEMSGS}" role="menuitem">
 					<i class="fa fa-envelope<!-- IF PRIVATE_MESSAGE_COUNT == 0 -->-o<!-- ENDIF -->"></i>
 					<span>{L_PRIVATE_MESSAGES}</span>
-					<strong>{PRIVATE_MESSAGE_COUNT}</strong>
+					<!-- IF PRIVATE_MESSAGE_COUNT != 0 --><strong>{PRIVATE_MESSAGE_COUNT}</strong><!-- ENDIF -->
 				</a>
 			</li>
 			<!-- ENDIF -->
