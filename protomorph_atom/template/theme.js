@@ -40,6 +40,17 @@
 		rel: 'nofollow'
 	});
 
+	// HIGHLIGHT.JS
+	// ============
+	hljs.configure({
+		tabReplace: '	',
+		useBR: true
+	});
+
+	$('.codebox code').each(function (i, block) {
+		hljs.highlightBlock(block);
+	});
+
 	// OFF CANVAS MENU
 	// ===============
 
