@@ -434,7 +434,9 @@ dl.polls:after,
 div.jumpbox-return:before,
 div.jumpbox-return:after,
 .search-header:before,
-.search-header:after {
+.search-header:after,
+#gallery:before,
+#gallery:after {
 	display: table;
 	content: " ";
 }
@@ -452,7 +454,8 @@ dl.polls:after,
 #minitabs > ul:after,
 .postprofile .avatar-container:after,
 div.jumpbox-return:after,
-.search-header:after { clear: both; }
+.search-header:after,
+#gallery:after { clear: both; }
 
 /* =======================================================================
  * Off Canvas Body
