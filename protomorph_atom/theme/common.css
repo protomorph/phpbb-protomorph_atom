@@ -965,6 +965,8 @@ a.rightside {
 
 ul.linklist > li.responsive-menu { position: relative; }
 
+ul.linklist > li.responsive-menu.rightside { float: right; }
+
 ul.linklist > li.responsive-menu a.responsive-menu-link {
 	position: relative;
 	min-width: 14px;
@@ -975,7 +977,7 @@ ul.linklist > li.responsive-menu a.responsive-menu-link {
 
 ul.linklist > li.responsive-menu a.responsive-menu-link:before {
 	position: relative;
-	top: 0;
+	top: 1px;
 	display: inline-block;
 	padding: 0;
 	height: 10px;
@@ -985,8 +987,10 @@ ul.linklist > li.responsive-menu a.responsive-menu-link:before {
 	border-top: 6px double #12a3eb;
 }
 
-ul.linklist li.responsive-menu a.responsive-menu-link:hover:before,
-ul.linklist li.responsive-menu.visible a.responsive-menu-link:before { border-color: #0076b1; }
+ul.linklist > li.responsive-menu.rightside a.responsive-menu-link:before { margin-left: 4px; }
+
+ul.linklist > li.responsive-menu a.responsive-menu-link:hover:before,
+ul.linklist > li.responsive-menu.visible a.responsive-menu-link:before { border-color: #0076b1; }
 
 .navbar-header-top ul.linklist > li.responsive-menu a.responsive-menu-link:before { top: 0; }
 
