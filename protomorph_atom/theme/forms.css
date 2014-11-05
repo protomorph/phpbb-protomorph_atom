@@ -686,3 +686,13 @@ input.disabled { color: #bbbbbb; }
 
 .radio-custom > [type="radio"]:disabled:checked + .radio-icon:before,
 .radio-custom > [type="radio"]:disabled + .radio-icon:before { background-color: #bbbbbb; }
+
+#gallery label .radio-custom {
+	float: none;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	border: 0;
+}
+
+#gallery label .radio-custom > .radio-icon { top: 0; }
