@@ -355,11 +355,11 @@ ul.linklist.bulletin > li.small-icon:before { display: none; }
 
 .report-icon:before { background-position: -165px 0; }
 
-.report-icon:hover:before { background-position: -165px -21px; }
+.report-icon:hover:before { background-position: -165px -20px; }
 
 .info-icon:before { background-position: -175px 0; }
 
-.info-icon:hover:before { background-position: -175px -21px; }
+.info-icon:hover:before { background-position: -175px -20px; }
 
 .button.responsive-menu-link:before { background-position: -191px 0; }
 
