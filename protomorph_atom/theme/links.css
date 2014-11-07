@@ -103,6 +103,14 @@ a.arrow-left { background: url("./images/arrow_left.gif") no-repeat 3px 50%; }
 
 a.arrow-right { background: url("./images/arrow_right.gif") no-repeat 95% 50%; }
 
+a.arrow-up,
+a.arrow-down,
+a.arrow-left,
+a.arrow-right {
+	-webkit-transition: background-position .3s ease-in-out;
+					transition: background-position .3s ease-in-out;
+}
+
 a.arrow-up {
 	padding-left: 10px;
 	text-decoration: none;
