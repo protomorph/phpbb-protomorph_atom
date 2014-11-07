@@ -386,7 +386,9 @@ a:hover	{
 }
 
 code,
-pre { font-family: "Inconsolata", Menlo, Monaco, Consolas, "Courier New", monospace; }
+kbd,
+pre,
+samp { font-family: "Inconsolata", Menlo, Monaco, Consolas, "Courier New", monospace; }
 
 code {
 	display: inline-block;
@@ -394,6 +396,19 @@ code {
 	font-size: 90%;
 	color: #999999;
 	background-color: #f3f3f3;
+}
+
+kbd {
+	padding: 2px 4px;
+	font-size: 90%;
+	color: #fff;
+	background-color: #333;
+}
+
+kbd kbd {
+	padding: 0;
+	font-size: 100%;
+	font-weight: bold;
 }
 
 pre {
@@ -416,7 +431,9 @@ pre {
 
 pre code {
 	padding: 0;
+	font-size: inherit;
 	color: inherit;
+	white-space: pre-wrap;
 	background-color: transparent;
 }
 
