@@ -2065,6 +2065,24 @@ div.jumpbox-return > a {
 	text-decoration: none;
 }
 
+.dropdown-extended a.mark_read {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	display: none;
+	z-index: 2;
+	margin-top: -20px;
+	width: 30px;
+	height: 40px;
+	background-color: #ffffff;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.dropdown-extended li:hover a.mark_read { display: block; }
+
+.dropdown-extended a.mark_read:hover { width: 40px; }
+
 .notification_list ul li img {
 	float: left;
 	max-height: 50px;
