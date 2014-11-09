@@ -4222,9 +4222,15 @@ input[type="file"] {
 	-moz-appearance: button;
 }
 
-select { cursor: pointer; }
+select {
+	height: 32px;
+	cursor: pointer;
+}
 
-select[multiple] { height: auto; }
+select[multiple] {
+	height: auto;
+	max-height: auto;
+}
 
 select:focus { outline-style: none; }
 
