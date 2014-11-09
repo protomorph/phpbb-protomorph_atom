@@ -28,6 +28,6 @@ A simple flat style with an off canvas menu for [phpBB 3.1][2]
 
 © 2014 - [ProtoMorph][1]
 
-[1]: http://protomorph.tk/
+[1]: http://protomorph.cf/
 [2]: https://www.phpbb.com/
 [3]: http://opensource.org/licenses/GPL-2.0
