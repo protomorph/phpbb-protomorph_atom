@@ -1,4 +1,4 @@
-ProtoMorph Atom v1.0.0-RC1
+ProtoMorph Atom v1.0.0-RC2
 ======================
 
 A simple flat style with an off canvas menu for [phpBB 3.1][2]
