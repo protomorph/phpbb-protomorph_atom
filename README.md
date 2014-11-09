@@ -16,6 +16,7 @@ A simple flat style with an off canvas menu for [phpBB 3.1][2]
 - Styled checkboxes and radio buttons.
 - Styled tool tips (from Bootstrap).
 - Syntax highlighting (highlight.js).
+- normalize.css v3.0.2.
 
 #### To Do
 
