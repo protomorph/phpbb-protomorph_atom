@@ -4,7 +4,7 @@
  * Style name:			ProtoMorph Atom: Version 1.0.0
  * Based on style:	prosilver (the default phpBB 3.1.x style)
  * Original author:	Tom Beddard ( http://www.subblue.com/ )
- * Modified by:			ProtoMorph ( http://protomorph.tk/ )
+ * Modified by:			ProtoMorph ( http://protomorph.cf/ )
  * ========================================================================
  * Copyright 2014
  * Licensed GNU General Public License, version 2 (GPL-2.0)
@@ -4600,7 +4600,12 @@ textarea.inputbox { width: 100%; }
 
 input[type="number"] { -moz-padding-end: inherit; }
 
-input[type="search"] { -webkit-appearance: textfield; }
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+					box-sizing: border-box;
+}
 
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-results-button,
