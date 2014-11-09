@@ -20,7 +20,6 @@ A simple flat style with an off canvas menu for [phpBB 3.1][2]
 #### To Do
 
 - Fix minor bugs
-- Merge main stylesheets into stylesheet.css
 
 #### License
 
