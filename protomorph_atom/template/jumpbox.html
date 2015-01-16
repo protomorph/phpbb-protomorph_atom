@@ -29,7 +29,7 @@
 			<ul class="dropdown-contents">
 			<!-- BEGIN jumpbox_forums -->
 				<!-- IF jumpbox_forums.FORUM_ID neq -1 -->
-				<li>
+				<li <!-- IF jumpbox_forums.FORUM_ID eq S_FORUM_ID -->class="active"<!-- ENDIF -->>
 					<a href="{jumpbox_forums.LINK}"><!-- BEGIN level -->&nbsp;-&nbsp;<!-- END level -->{jumpbox_forums.FORUM_NAME}</a>
 				</li>
 				<!-- ENDIF -->
