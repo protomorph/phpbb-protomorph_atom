@@ -1,7 +1,7 @@
 /* =======================================================================
- * Extra style Markup
+ * EXTRA STYLE MARKUP
  * =======================================================================
- * Scroll to top button
+ * SCROLL TO TOP BUTTON
  * ======================================================================== */
 .scroll-to-top {
 	position: fixed;
@@ -29,7 +29,97 @@
 }
 
 /* ========================================================================
- * Bootstrap Tooltip
+ * YOUTUBE EMBED: VERSION 0.1.0
+ * ======================================================================== */
+.video-container {
+	position: relative;
+	float: none;
+	display: block;
+	padding-top: 0;
+	padding-bottom: 56.25%;
+	margin: 0 auto;
+	height: 0;
+	clear: both;
+	background-color: #fff;
+	-webkit-transition: all .3s ease-in-out;
+					transition: all .3s ease-in-out;
+}
+
+[data-youtube-video],
+.video-frame {
+	top: 0;
+	left: 0;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	-webkit-transition: all .3s ease-in-out;
+					transition: all .3s ease-in-out;
+}
+
+.video-container > [data-youtube-video],
+.video-container > .video-frame {
+	position: absolute;
+	background-image: url("./images/yt_loader.gif");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+}
+
+[data-youtube-video] { cursor: pointer; }
+
+[data-youtube-video] > .video-title {
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	display: inline-block;
+	padding: 2px 5px;
+	margin-right: 15px;
+	background-color: #e52d27;
+	font-family: inherit;
+	color: #fff;
+}
+
+[data-youtube-video] > .play-icon {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 34px;
+	width: 50px;
+	-webkit-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+}
+
+[data-youtube-video] > .play-icon:before,
+[data-youtube-video] > .play-icon:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-image: url("./images/yt_play.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	-webkit-transition: opacity .3s ease-in-out;
+					transition: opacity .3s ease-in-out;
+}
+
+[data-youtube-video] > .play-icon:before { opacity: 0.5; }
+
+[data-youtube-video]:hover > .play-icon:before { opacity: 0; }
+
+[data-youtube-video] > .play-icon:after {
+	background-position: 0 100%;
+	opacity: 0;
+}
+
+[data-youtube-video]:hover > .play-icon:after { opacity: 1; }
+
+/* ========================================================================
+ * BOOTSTRAP TOOLTIP
  * ======================================================================== */
 .tooltip {
 	position: absolute;
