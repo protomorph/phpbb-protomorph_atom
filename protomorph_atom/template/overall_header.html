@@ -38,10 +38,11 @@
 	 * Modified by:			ProtoMorph ( http://protomorph.cf/ )
 	-->
 
+	<link rel="stylesheet" href="{T_THEME_PATH}/normalize.css?assets_version={T_ASSETS_VERSION}" />
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic|Inconsolata:400,700" />
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css?assets_version={T_ASSETS_VERSION}" />
 	<!-- A complete list of styles can be found at (https://highlightjs.org/static/test.html) -->
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css?assets_version={T_ASSETS_VERSION}" />
 	<link rel="stylesheet" href="{T_STYLESHEET_LINK}" />
 	<link rel="stylesheet" href="{T_STYLESHEET_LANG_LINK}" />
 
@@ -65,12 +66,8 @@
 
 	<link rel="stylesheet" href="{T_THEME_PATH}/extra.css?assets_version={T_ASSETS_VERSION}" />
 
-	<!--[if lt IE 9]>
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+	<script src="{T_TEMPLATE_PATH}/modernizr.min.js?assets_version={T_ASSETS_VERSION}"></script>
+	<script src="{T_TEMPLATE_PATH}/theme-mq.js?assets_version={T_ASSETS_VERSION}"></script>
 </head>
 
 <body id="phpbb" class="nojs notouch section-{SCRIPT_NAME} {S_CONTENT_DIRECTION} {BODY_CLASS}">
@@ -85,10 +82,6 @@
 
 		<div class="headerbar">
 			<div class="inner">
-				<button class="toggle-button" type="button" data-toggle="off-canvas">
-					<span class="navigation-icon"></span>
-				</button>
-
 				<a id="logo" class="logo" href="<!-- IF U_SITE_HOME -->{U_SITE_HOME}<!-- ELSE -->{U_INDEX}<!-- ENDIF -->" title="<!-- IF U_SITE_HOME -->{L_SITE_HOME}<!-- ELSE -->{L_INDEX}<!-- ENDIF -->">
 					{SITE_LOGO_IMG}
 				</a>
