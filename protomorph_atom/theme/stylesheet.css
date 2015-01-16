@@ -6,7 +6,7 @@
  * Original author:	Tom Beddard ( http://www.subblue.com/ )
  * Modified by:			ProtoMorph ( http://protomorph.cf/ )
  * ========================================================================
- * Copyright 2014 ProtoMorph ( http://protomorph.cf/ )
+ * Copyright 2015 ProtoMorph ( http://protomorph.cf/ )
  * Licensed GNU General Public License, version 2 (GPL-2.0)
  * =======================================================================
  * Colour scheme:
@@ -41,183 +41,8 @@
 	text-shadow: none;
 }
 
-/* =======================================================================
- * normalize.css v3.0.2 | MIT License | git.io/normalize
- * ======================================================================= */
-html {
-	font-family: sans-serif;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-
-body { margin: 0; }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary { display: block; }
-
-audio,
-canvas,
-progress,
-video {
-	display: inline-block;
-	vertical-align: baseline;
-}
-
-audio:not([controls]) {
-	display: none;
-	height: 0;
-}
-
-[hidden],
-template { display: none; }
-
-a { background-color: transparent; }
-
-a:active,
-a:hover { outline: 0; }
-
-abbr[title] { border-bottom: 1px dotted; }
-
-b,
-strong { font-weight: bold; }
-
-dfn { font-style: italic; }
-
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
-
-mark {
-	background: #ff0;
-	color: #000;
-}
-
-small { font-size: 80%; }
-
-sub,
-sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sup { top: -0.5em; }
-
-sub { bottom: -0.25em; }
-
-img { border: 0; }
-
-svg:not(:root) { overflow: hidden; }
-
-figure { margin: 1em 40px; }
-
-hr {
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	height: 0;
-}
-
-pre { overflow: auto; }
-
-code,
-kbd,
-pre,
-samp {
-	font-family: monospace, monospace;
-	font-size: 1em;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-	color: inherit;
-	font: inherit;
-	margin: 0;
-}
-
-button { overflow: visible; }
-
-button,
-select { text-transform: none; }
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	-webkit-appearance: button;
-	cursor: pointer;
-}
-
-button[disabled],
-html input[disabled] { cursor: default; }
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
-
-input { line-height: normal;  }
-
-input[type="checkbox"],
-input[type="radio"] {
-	box-sizing: border-box;
-	padding: 0;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button { height: auto; }
-
-input[type="search"] {
-	-webkit-appearance: textfield;
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
-
-fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-	border: 0;
-	padding: 0;
-}
-
-textarea { overflow: auto; }
-
-optgroup { font-weight: bold; }
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-td,
-th { padding: 0; }
-
 /* ========================================================================
- * Print
+ * PRINT
  * ======================================================================== */
 @media print {
 	* {
@@ -385,7 +210,7 @@ th { padding: 0; }
 }
 
 /* =======================================================================
- * General Markup Styles
+ * GENERAL MARKUP STYLES
  * ======================================================================= */
 *,
 *:before,
@@ -628,7 +453,7 @@ div.jumpbox-return:after,
 #gallery:after { clear: both; }
 
 /* =======================================================================
- * Off Canvas Body
+ * OFF CANVAS BODY
  * ======================================================================= */
 .main-page {
 	position: relative;
@@ -661,7 +486,7 @@ div.jumpbox-return:after,
 }
 
 /* ========================================================================
- * Off Canvas Menu
+ * OFF CANVAS MENU
  * ======================================================================== */
 .navbar-off-canvas {
 	position: fixed;
@@ -753,7 +578,7 @@ div.jumpbox-return:after,
 }
 
 /* ========================================================================
- * Header
+ * HEADER
  * ======================================================================== */
 .headerbar {
 	position: relative;
@@ -861,21 +686,11 @@ div.jumpbox-return:after,
 }
 
 .toggle-button {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 9px 10px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 20px;
+	display: block;
 	background-color: transparent;
 	background-image: none;
-	border: 1px solid transparent;
 	cursor: pointer;
 }
-
-.toggle-button:hover,
-.toggle-button:active { border-color: #ffffff; }
 
 .toggle-button:active {
 	background-color: rgba(0,0,0,.075);
@@ -895,7 +710,7 @@ div.jumpbox-return:after,
 	width: 20px;
 	height: 2px;
 	line-height: 20px;
-	background-color: rgba(255,255,255,1);
+	background-color: #999999;
 	-webkit-transition: all .6s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 					transition: all .6s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 	-webkit-transform: translateX(0%) translateY(-50%);
@@ -910,7 +725,7 @@ div.jumpbox-return:after,
 	content: '';
 	width: 100%;
 	height: 2px;
-	background-color: rgba(255,255,255,1);
+	background-color: #999999;
 	-webkit-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 					transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 	-webkit-transform: rotate(0deg);
@@ -928,12 +743,13 @@ div.jumpbox-return:after,
 
 .in .toggle-button > .navigation-icon:before,
 .in .toggle-button > .navigation-icon:after {
+	background-color: #353535;
 	-webkit-transition: all .6s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 					transition: all .6s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 .in .toggle-button .navigation-icon,
-.in .toggle-button:hover .navigation-icon { background-color: rgba(255,255,255,0); }
+.in .toggle-button:hover .navigation-icon { background-color: transparent; }
 
 .in .toggle-button > .navigation-icon:before {
 	top: 0;
@@ -948,7 +764,7 @@ div.jumpbox-return:after,
 }
 
 /* =======================================================================
- * Main blocks
+ * MAIN BLOCKS
  * ======================================================================= */
 .page-header,
 .page-body,
@@ -978,7 +794,7 @@ div.jumpbox-return:after,
 }
 
 /* ========================================================================
- * Footer
+ * FOOTER
  * ======================================================================== */
 .page-footer { padding: 0 10px; }
 
@@ -995,7 +811,7 @@ div.jumpbox-return:after,
 }
 
 /* ========================================================================
- * Navbars
+ * NAVBARS
  * ======================================================================== */
 .navbar-header-top {
 	padding: 0 10px;
@@ -1084,7 +900,7 @@ div.jumpbox-return:after,
 .navbar-footer .linklist > li > span.current-timezone { padding-right: 0; }
 
 /* =======================================================================
- * Round cornered boxes and backgrounds
+ * ROUND CORNERED BOXES AND BACKGROUNDS
  * ======================================================================= */
 .forabg,
 .forumbg {
@@ -1136,7 +952,7 @@ ul.zebra-list li:nth-child(even) { background-color: #f3f3f3; }
 .rowbg { margin: 5px 5px 2px 5px; }
 
 /* =======================================================================
- * Horizontal lists
+ * HORIZONTAL LISTS
  * ======================================================================= */
 .navbar ul.linklist,
 ul.linklist {
@@ -1237,7 +1053,7 @@ li.icon-subscribe > a { color: #31d510;}
 li.icon-unsubscribe > a { color: #ed1236;}
 
 /* =======================================================================
- * Bulletin icons for list items
+ * BULLETIN ICONS FOR LIST ITEMS
  * ======================================================================= */
 .responsive-menu:before { display: none !important; }
 
@@ -1280,7 +1096,7 @@ li.icon-unsubscribe > a { color: #ed1236;}
 }
 
 /* =======================================================================
- * Dropdown menu
+ * DROPDOWN MENU
  * ======================================================================= */
 .dropdown-container { position: relative; }
 
@@ -1319,7 +1135,7 @@ li.icon-unsubscribe > a { color: #ed1236;}
 	margin-right: 0;
 }
 
-.dropdown-button-control .dropdown { top: 24px; }
+.dropdown-button-control .dropdown { top: 21px; }
 
 .dropdown-button-control.dropdown-up .dropdown {
 	top: auto;
@@ -1421,6 +1237,14 @@ li.icon-unsubscribe > a { color: #ed1236;}
 
 .dropdown li > a:hover { background-color: #eeeeee; }
 
+.dropdown li.active > a,
+.dropdown li.active > a:hover,
+.dropdown li.active > a:active,
+.dropdown li.active > a:focus {
+	color: #ffffff;
+	background-color: #12a3eb;
+}
+
 .dropdown li:first-child,
 .dropdown li.separator + li,
 .dropdown li li { border-top: 0; }
@@ -1430,7 +1254,7 @@ li.icon-unsubscribe > a { color: #ed1236;}
 .dropdown li li:last-child { padding-bottom: 0; }
 
 .dropdown li li {
-	border-top: 1px dotted transparent;
+	border-top: 0;
 	padding-left: 18px;
 }
 
@@ -1448,7 +1272,7 @@ li.icon-unsubscribe > a { color: #ed1236;}
 .dropdown li.separator:last-child { display: none !important; }
 
 /* =======================================================================
- * Responsive breadcrumbs
+ * RESPONSIVE BREADCRUMBS
  * ======================================================================= */
 .breadcrumbs .crumb {
 	float: left;
@@ -1489,7 +1313,7 @@ li.icon-unsubscribe > a { color: #ed1236;}
 .breadcrumbs .crumb.wrapped-tiny a { max-width: 40px; }
 
 /* =======================================================================
- * Table styles
+ * TABLE STYLES
  * ======================================================================= */
 table.table1 { width: 100%; }
 
@@ -1624,9 +1448,9 @@ table.info tbody th {
 }
 
 /* =======================================================================
- * Misc layout styles
+ * MISC LAYOUT STYLES
  * =======================================================================
- * column[1-2] styles are containers for two column layouts
+ * COLUMN[1-2] STYLES ARE CONTAINERS FOR TWO COLUMN LAYOUTS
  * ======================================================================= */
 .column1,
 .column2 {
@@ -1725,7 +1549,7 @@ fieldset.fields1 dl.pmlist dd.recipients { margin-left: 0 !important; }
 .forabg + .action-bar { margin-top: 20px; }
 
 /* =======================================================================
- * Pagination
+ * PAGINATION
  * ======================================================================= */
 .pagination {
 	float: right;
@@ -1856,7 +1680,7 @@ fieldset.fields1 dl.pmlist dd.recipients { margin-left: 0 !important; }
 .row .pagination li span { padding: 0 5px; }
 
 /* =======================================================================
- * jQuery popups
+ * JQUERY POPUPS
  * ======================================================================= */
 .phpbb_alert {
 	position: fixed;
@@ -1972,7 +1796,7 @@ fieldset.fields1 dl.pmlist dd.recipients { margin-left: 0 !important; }
 }
 
 /* =======================================================================
- * Miscellaneous styles
+ * MISCELLANEOUS STYLES
  * ======================================================================= */
 #forum-permissions {
 	float: right;
@@ -2112,7 +1936,7 @@ ul.linklist > li.hidden { display: none; }
 .member-search strong { font-size: 12px; }
 
 /* =======================================================================
- * Junpbox
+ * JUNPBOX
  * ======================================================================= */
 #jumpbox { margin-bottom: 0; }
 
@@ -2131,7 +1955,7 @@ div.jumpbox-return > a {
 }
 
 /* =======================================================================
- * Stats block
+ * STATS BLOCK
  * ======================================================================= */
 .stat-block {
 	float: left;
@@ -2168,7 +1992,7 @@ div.jumpbox-return > a {
 .stat-block p:last-child { margin-bottom: 0; }
 
 /* =======================================================================
- * Dropdown extended
+ * DROPDOWN EXTENDED
  * ======================================================================= */
 .dropdown-extended { display: none; }
 
@@ -2317,7 +2141,7 @@ li.notification-disapproved strong { color: #b3001e; }
 .notification_text { margin-left: 58px; }
 
 /* =======================================================================
- * Navbar specific list items
+ * NAVBAR SPECIFIC LIST ITEMS
  * ======================================================================= */
 #quick-links { margin: 0; }
 
@@ -2347,7 +2171,7 @@ li.notification-disapproved strong { color: #b3001e; }
 }
 
 /* =======================================================================
- * Content Styles
+ * CONTENT STYLES
  * ======================================================================= */
 ul.topiclist {
 	display: block;
@@ -2648,7 +2472,7 @@ a.feed-icon-forum {
 }
 
 /* =======================================================================
- * Post body styles
+ * POST BODY STYLES
  * ======================================================================= */
 .postbody {
 	position: relative;
@@ -2688,17 +2512,13 @@ a.feed-icon-forum {
 
 @media (max-width: 480px) {
 	.has-profile .postbody h3 {
+		float: none;
 		margin-left: 0 !important;
 		margin-right: 0 !important;
 	}
 }
 
 .postbody h3 img { vertical-align: bottom; }
-
-.has-profile .postbody h3 {
-	/* If there is a post-profile, we position the post-buttons differently */
-	float: none !important;
-}
 
 .postbody .content {
 	padding-bottom: 2px;
@@ -2738,7 +2558,7 @@ a.feed-icon-forum {
 .signature a:hover { border: none; }
 
 /* =======================================================================
- * Poster profile block
+ * POSTER PROFILE BLOCK
  * ======================================================================= */
 .postprofile {
 	float: right;
@@ -2868,7 +2688,7 @@ dd.profile-contact { overflow: visible; }
 
 .profile-contact .icon_contact { vertical-align: middle; }
 
-.profile-contact .dropdown { margin-right: -22px; }
+.profile-contact .dropdown { margin-right: -11px; }
 
 .online {
 	background-image: url("./en/icon_user_online.gif");
@@ -2933,7 +2753,7 @@ a.top,
 a.top2 { display: none; }
 
 /* =======================================================================
- * Topic review panel
+ * TOPIC REVIEW PANEL
  * ======================================================================= */
 #review { margin-top: 20px; }
 
@@ -2964,7 +2784,7 @@ a.top2 { display: none; }
 .post-ignore .postbody { display: none; }
 
 /* =======================================================================
- * MCP Post details
+ * MCP POST DETAILS
  * ======================================================================= */
 #post_details {
 	overflow: auto;
@@ -2972,7 +2792,7 @@ a.top2 { display: none; }
 }
 
 /* =======================================================================
- * Content container styles
+ * CONTENT CONTAINER STYLES
  * ======================================================================= */
 .content {
 	clear: both;
@@ -3130,9 +2950,9 @@ a.arrow-right:hover {
 a.anchor { display: block; }
 
 /* =======================================================================
- * BB Code styles
+ * BB CODE STYLES
  * =======================================================================
- * Quote block
+ * QUOTE BLOCK
  * ======================================================================= */
 blockquote {
 	padding: 10px 10px 10px 5px;
@@ -3164,7 +2984,7 @@ blockquote cite cite { font-size: 10px; }
 blockquote.uncited { padding-top: 25px; }
 
 /* ========================================================================
- * Code block
+ * CODE BLOCK
  * ======================================================================== */
 .codebox {
 	padding: 5px;
@@ -3212,7 +3032,7 @@ blockquote .codebox { margin-left: 0; }
 .syntaxstring { color: #94002a; }
 
 /* =======================================================================
- * Attachments
+ * ATTACHMENTS
  * ======================================================================= */
 .attachbox {
 	float: left;
@@ -3308,7 +3128,7 @@ dl.thumbnail dt a:hover { background-color: #eeeeee; }
 dl.thumbnail dt a:hover img { border: 1px solid #0084b8; }
 
 /* =======================================================================
- * Post poll styles
+ * POST POLL STYLES
  * ======================================================================= */
 fieldset.polls { }
 
@@ -3388,7 +3208,7 @@ fieldset.polls dd div {
 }
 
 /* ========================================================================
- * Button Styles
+ * BUTTON STYLES
  * ======================================================================== */
 .button {
 	position: relative;
@@ -3562,7 +3382,7 @@ fieldset.polls dd div {
 .modtools-icon:active:before { background-position: -225px -20px; }
 
 /* ========================================================================
- * Icon images
+ * ICON IMAGES
  * ======================================================================== */
 .small-icon { background-image: none; }
 
@@ -3624,7 +3444,7 @@ ul.linklist.bulletin > li.small-icon:before { display: none; }
 }
 
 /* ========================================================================
- * Poster contact icons
+ * POSTER CONTACT ICONS
  * ======================================================================== */
 .contact-icons.dropdown-contents {
 	min-width: 0;
@@ -3682,7 +3502,7 @@ ul.linklist.bulletin > li.small-icon:before { display: none; }
 .phpbb_yahoo-icon { background-position: -224px 0; }
 
 /* ========================================================================
- * Post control buttons
+ * POST CONTROL BUTTONS
  * ======================================================================== */
 .post-buttons {
 	float: right;
@@ -3691,18 +3511,11 @@ ul.linklist.bulletin > li.small-icon:before { display: none; }
 }
 
 .has-profile .post-buttons {
-	position: absolute;
-	right: 8px;
+	position: relative;
+	right: -2px;
 	top: 0;
-	float: none;
+	float: right;
 	margin: 0;
-}
-
-@media (max-width: 480px) {
-	.has-profile .post-buttons {
-		right: 20px;
-		top: 15px;
-	}
 }
 
 .post-buttons > li {
@@ -3754,13 +3567,48 @@ ul.linklist.bulletin > li.small-icon:before { display: none; }
 
 .button.responsive-menu-link:hover:before { background-position: -191px -21px; }
 
+.post-buttons .share-button,
+.post-buttons .responsive-menu-link.icon-button,
+.hastouch .post-buttons .share-button,
+.hastouch .post-buttons .responsive-menu-link.icon-button {
+	padding: 4px 8px 3px;
+	min-width: 30px;
+	height: auto;
+}
+
+.button.share-button { text-align: center; }
+
+.button.share-button:hover { background-color: #ffffff; }
+
+.button.facebook-button {
+	border-color: #3b5998;
+	color: #3b5998;
+}
+
+.button.google-plus-button {
+	border-color: #dd4b39;
+	color: #dd4b39;
+}
+
+.button.twitter-button {
+	border-color: #55acee;
+	color: #55acee;
+}
+
+.button.share-button:hover { color: #ffffff; }
+
+.button.facebook-button:hover { background-color: #3b5998; }
+
+.button.google-plus-button:hover { background-color: #dd4b39; }
+
+.button.twitter-button:hover { background-color: #55acee; }
+
 /* Responsive buttons in post body */
 .post-buttons .dropdown { top: 18px; }
 
 .post-buttons .dropdown a {
 	display: block;
-	font-size: 1.2em;
-	text-align: right;
+	font-size: 14px;
 }
 
 .hasjs .postbody .post-buttons { max-width: 40%; }
@@ -3772,7 +3620,7 @@ button::-moz-focus-inner {
 }
 
 /* =======================================================================
- * Control Panel Styles
+ * CONTROL PANEL STYLES
  * ======================================================================= */
 #cp-main {
 	float: left;
@@ -3885,7 +3733,7 @@ ul.cplist.missing-column dd.lastpost { width: 30%; }
 }
 
 /* =======================================================================
- * CP tabs shared
+ * CP TABS SHARED
  * ======================================================================= */
 #tabs,
 #minitabs { line-height: 20px; }
@@ -3922,7 +3770,7 @@ ul.cplist.missing-column dd.lastpost { width: 30%; }
 #minitabs .tab > a { padding: 5px 10px; }
 
 /* =======================================================================
- * CP tabbed menu
+ * CP TABBED MENU
  * ======================================================================= */
 #tabs { margin-bottom: 20px; }
 
@@ -3953,7 +3801,7 @@ ul.cplist.missing-column dd.lastpost { width: 30%; }
 }
 
 /* =======================================================================
- * Responsive tabs
+ * RESPONSIVE TABS
  * ======================================================================= */
 .responsive-tab { position: relative; }
 
@@ -4004,9 +3852,9 @@ ul.cplist.missing-column dd.lastpost { width: 30%; }
 #minitabs .dropdown li { text-align: left; }
 
 /* =======================================================================
- * UCP navigation menu
+ * UCP NAVIGATION MENU
  * =======================================================================
- * Container for sub-navigation list
+ * CONTAINER FOR SUB-NAVIGATION LIST
  * ======================================================================= */
 #navigation {
 	width: 100%;
@@ -4067,7 +3915,7 @@ ul.cplist.missing-column dd.lastpost { width: 30%; }
 }
 
 /* =======================================================================
- * Preferences pane layout
+ * PREFERENCES PANE LAYOUT
  * ======================================================================= */
 #cp-main h2 {
 	border-bottom: none;
@@ -4109,7 +3957,7 @@ dl.mini dd { padding-top: 4px; }
 .friend-offline { font-style: italic; }
 
 /* =======================================================================
- * PM Styles
+ * PM STYLES
  * ======================================================================= */
 #pm-menu { }
 
@@ -4204,7 +4052,7 @@ ol.def-rules li { padding: 1px; }
 #gallery label:hover { background-color: #12a3eb; }
 
 /* ========================================================================
- * PM progress bar
+ * PM PROGRESS BAR
  * ======================================================================== */
 .pm-progress-bar {
 	display: block;
@@ -4229,7 +4077,7 @@ ol.def-rules li { padding: 1px; }
 .pm-progress-bar > .progress.danger { background-color: #ed1236; }
 
 /* =======================================================================
- * Responsive *CP navigation
+ * RESPONSIVE * CP NAVIGATION
  * ======================================================================= */
 @media (max-width: 992px) {
 	.nojs #tabs a span,
@@ -4242,7 +4090,7 @@ ol.def-rules li { padding: 1px; }
 }
 
 /* =======================================================================
- * Form Styles
+ * FORM STYLES
  * ======================================================================= */
 fieldset {
 	padding: 0;
@@ -4299,7 +4147,7 @@ label input { vertical-align: middle; }
 label img { vertical-align: middle; }
 
 /* =======================================================================
- * Definition list layout for forms
+ * DEFINITION LIST LAYOUT FOR FORMS
  * ======================================================================= */
 fieldset dl { padding: 0 0 10px; }
 
@@ -4497,9 +4345,9 @@ fieldset.submit-buttons {
 fieldset.submit-buttons input { vertical-align: middle; }
 
 /* =======================================================================
- * Posting page styles
+ * POSTING PAGE STYLES
  * =======================================================================
- * Buttons used in the editor
+ * BUTTONS USED IN THE EDITOR
  * =======================================================================*/
 #format-buttons { margin-bottom: 15px; }
 
@@ -4586,7 +4434,7 @@ fieldset.submit-buttons input { vertical-align: middle; }
 }
 
 /* =======================================================================
- * Input field styles
+ * INPUT FIELD STYLES
  * ======================================================================= */
 .inputbox,
 select {
@@ -4655,7 +4503,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 input[type="search"]::-webkit-search-cancel-button { cursor: pointer; }
 
 /* =======================================================================
- * Form button styles
+ * FORM BUTTON STYLES
  * ======================================================================= */
 a.button1,
 input.button1,
@@ -4744,11 +4592,15 @@ input.disabled {
 }
 
 /* ========================================================================
- * Search box (topic and forum)
+ * SEARCH BOX (TOPIC AND FORUM)
  * ======================================================================== */
 .search-box { float: left; }
 
 .action-bar .search-box { margin-top: 0; }
+
+@media (max-width: 360px) {
+	.action-bar .search-box { margin-top: 5px; }
+}
 
 .search-box fieldset {
 	padding: 0;
@@ -4789,7 +4641,7 @@ input.disabled {
 .search-box .search-adv-icon:active:before { background-position: -265px -20px; }
 
 /* =======================================================================
- * Search box (header)
+ * SEARCH BOX (HEADER)
  * ======================================================================= */
 .search-header {
 	position: relative;
@@ -4843,9 +4695,10 @@ input.disabled { color: #bbbbbb; }
 	.responsive-search { display: block !important; }
 
 	.responsive-search a {
+		position: relative;
 		display: block;
-		width: 18px;
-		height: 18px;
+		width: 22px;
+		height: 22px;
 		text-indent: 99px;
 		overflow: hidden;
 		background-position: 50% 50%;
@@ -4856,7 +4709,7 @@ input.disabled { color: #bbbbbb; }
 }
 
 /* ========================================================================
- * Custom checkboxes and radios
+ * CUSTOM CHECKBOXES AND RADIOS
  * ======================================================================== */
 .checkbox-custom,
 .radio-custom,
